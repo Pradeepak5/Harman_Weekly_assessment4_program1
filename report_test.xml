@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="2" tests="9" time="0.188" timestamp="2022-04-01T18:44:31.511469" hostname="DESKTOP-G0HP4A6"><testcase classname="test_program_1" name="test_square_root[4-2.0]" time="0.002" /><testcase classname="test_program_1" name="test_square_root[9-3.0]" time="0.001" /><testcase classname="test_program_1" name="test_square_root[10-3]" time="0.002"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_program_1" name="test_quadratic_equation[2-3-4-5]" time="0.001"><skipped type="pytest.skip" message="no need">C:\Users\user\PycharmProjects\Harman_Weekly_Assessment_4_program1\test_program_1.py:10: no need</skipped></testcase><testcase classname="test_program_1" name="test_cels_to_farh[3-37.4]" time="0.001" /><testcase classname="test_program_1" name="test_cels_to_farh[4-32.0]" time="0.002"><failure message="assert 39.2 == 32.0">celsius = 4, result = 32.0
+
+    @pytest.mark.parametrize("celsius,result",[(3,37.4),(4,32.0)])
+    def test_cels_to_farh(celsius,result):
+        cel=program_1.cels_to_farh(celsius)
+&gt;       assert cel == result
+E       assert 39.2 == 32.0
+
+test_program_1.py:19: AssertionError</failure></testcase><testcase classname="test_program_1" name="test_pos_neg_zero" time="0.001" /><testcase classname="test_program_1" name="test_natural_num[16-136]" time="0.001" /><testcase classname="test_program_1" name="test_natural_num[10-100]" time="0.001"><failure message="assert 55 == 100">num = 10, result = 100
+
+    @pytest.mark.parametrize("num,result",[(16,136),(10,100)])
+    def test_natural_num(num,result):
+        natnum=program_1.natural_num(num)
+&gt;       assert natnum == result
+E       assert 55 == 100
+
+test_program_1.py:32: AssertionError</failure></testcase></testsuite></testsuites>
